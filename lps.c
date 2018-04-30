@@ -9,7 +9,7 @@ struct lps_data {
 };
 
 int find_max(int a, int b) {
-    return (a > b) ? a : b;
+	return (a > b) ? a : b;
 }
 
 struct lps_data find_lps(char data[], int data_size){
@@ -25,10 +25,10 @@ struct lps_data find_lps(char data[], int data_size){
 			}
 		}
 	}
-	
+
 	int subseq_size = lps[0][data_size - 1];
 	char subseq[MAX_SIZE] = "";
-	
+
 	int i = 0;
 	int j = data_size - 1;
 	int index = 0;
@@ -50,7 +50,7 @@ struct lps_data find_lps(char data[], int data_size){
 			i++;
 		}
 	}
-	
+
 	struct lps_data result;
 	result.size = subseq_size;
 	strcpy(result.data, subseq);
@@ -66,7 +66,7 @@ int main() {
 	for (int i = -1; i < input_num; i++) {
 		char input[MAX_SIZE];
 		fgets(input, sizeof(input), stdin);	
-		
+
 		if (i >= 0) {
 			input_list[i].size = -1;
 			for(int j = 0; input[j] != '\0'; j++) {
