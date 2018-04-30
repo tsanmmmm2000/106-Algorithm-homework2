@@ -43,8 +43,8 @@ struct lps_data find_lps(char data[], int data_size){
             subseq[subseq_size - index - 1] = data[i];
             i++;
             j--;
-            index++;		
-		} else if (lps[i][j - 1] > lps[i + 1][j]) {
+            index++;
+        } else if (lps[i][j - 1] > lps[i + 1][j]) {
             j--;
         } else {
             i++;
