@@ -1,4 +1,5 @@
-# Longest palindrome subsequence problem
+# Longest Palindrome Subsequence Problem
+
 題目說明：
 
 給定字串，請找出其中最長且是迴文的子序列及其長度，字串由連續字符、字母或數字所組成，且其給定字串長度不會超過1000。
